@@ -19,10 +19,10 @@ fi
 (cd ${BUILDDIR} && rm -rf error-model2)
 (cp -f $JUNO_PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $JUNO_PLATFORM_FILE )
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
+(cd ${BUILDDIR} && git clone -b master https://github.com/osate/osate2-core.git core)
+(cd ${BUILDDIR} && git clone -b master https://github.com/osate/osate2-plugins.git plugins)
+(cd ${BUILDDIR} && git clone -b master https://github.com/osate/ErrorModelV1.git error-model1)
+(cd ${BUILDDIR} && git clone -b master https://github.com/osate/ErrorModelV2.git error-model2)
 
 
 (cd ${BUILDDIR} && sed -e 's/true/false/g' core/org.osate.aadl2/src/org/osate/aadl2/util/OsateDebug.java > OsateDebug.java)
