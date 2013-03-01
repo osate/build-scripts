@@ -38,11 +38,14 @@ fi
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
 
-(cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/plugin.properties" )
-(cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/about.mappings" )
+#(cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/plugin.properties" )
+#(cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/about.mappings" )
 
-(cd ${BUILDDIR} && sed -i "s/RELEASE_DATE/$DATE/g" "core/org.osate.branding/plugin.properties" )
-(cd ${BUILDDIR} && sed -i "s/RELEASE_DATE/$DATE/g" "core/org.osate.branding/about.mappings" )
+#(cd ${BUILDDIR} && sed -i "s/RELEASE_DATE/$DATE/g" "core/org.osate.branding/plugin.properties" )
+#(cd ${BUILDDIR} && sed -i "s/RELEASE_DATE/$DATE/g" "core/org.osate.branding/about.mappings" )
 
 (cp -f indigo.target ${BUILDDIR}/core/org.osate.build.target/indigo.target )
 (cp -f juno.target ${BUILDDIR}/core/org.osate.build.target/juno.target )
+
+
+(cd ${BUILDDIR}/build_and_test/osate-ramses-maven-build/ && mvn clean install)
