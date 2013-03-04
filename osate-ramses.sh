@@ -1,6 +1,7 @@
 #!/bin/sh
 
 BUILDDIR=/tmp/osate
+TARGETDIR=/tmp/osate-ramses
 
 VERSION=2.0.0-snapshot
 DATE=`date '+%Y%m%d'`
@@ -49,3 +50,5 @@ fi
 
 
 (cd ${BUILDDIR}/build_and_test/osate-ramses-maven-build/ && mvn clean install)
+
+cp -f ${BUILDDIR}/build_and_test/distribution/target/*.zip ${TARGETDIR}/
