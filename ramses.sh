@@ -1,6 +1,7 @@
 #!/bin/sh
 
-RAMSES_DISTRIBUTION=/tmp/ramses-exe/distribution-1.0.0-SNAPSHOT/
+RAMSES_DISTRIBUTION=/tmp/osate-ramses/distribution-1.0.0-SNAPSHOT/
+export RAMSES_DIR=${RAMSES_DISTRIBUTION}
 
 
 `which java` \
