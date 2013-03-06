@@ -48,7 +48,7 @@
 <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGe8CBOP"/>
 <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="1.1.0.v20120524-0542-785EoBqNKNYz-GX2sUgCaBtr2dhs"/>
 
-<repository location="jar:file:/tmp/org.eclipse.platform-4.2.zip!/"/>
+<repository location="jar:file:/tmp/org.eclipse.platform-4.2.2.zip!/"/>
 </location>
 
 </locations>
