@@ -4,7 +4,7 @@ BUILDDIR=/tmp/osate
 
 VERSION=2.0.2-snapshot
 DATE=`date '+%Y%m%d'`
-JUNO_PLATFORM_URL="http://mirrors.med.harvard.edu/eclipse/eclipse/downloads/drops4/R-4.2.2-201302041200/org.eclipse.platform-4.2.2.zip"
+JUNO_PLATFORM_URL="http://ftp.osuosl.org/pub/eclipse//eclipse/downloads/drops4/R-4.2.2-201302041200/org.eclipse.platform-4.2.2.zip"
 JUNO_PLATFORM_FILE="org.eclipse.platform-4.2.2.zip"
 
 mkdir -p ${BUILDDIR}
