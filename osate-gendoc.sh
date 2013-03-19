@@ -13,6 +13,7 @@ mkdir -p ${BUILDDIR}
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/std ${BUILDDIR}/osate-doc/aadl-std)
 (cd ${BUILDDIR}/osate-doc/aadl-std && cp -f section-1.html index.html)
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/plugins ${BUILDDIR}/osate-doc/osate-plugins)
+(cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/emv2 ${BUILDDIR}/osate-doc/osate-emv2)
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/plugindev ${BUILDDIR}/osate-doc/osate-plugindev)
 
 exit 0
