@@ -15,5 +15,6 @@ mkdir -p ${BUILDDIR}
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/plugins ${BUILDDIR}/osate-doc/osate-plugins)
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/emv2 ${BUILDDIR}/osate-doc/osate-emv2)
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/plugindev ${BUILDDIR}/osate-doc/osate-plugindev)
+(cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/start ${BUILDDIR}/osate-doc/osate-introduction)
 
 exit 0
