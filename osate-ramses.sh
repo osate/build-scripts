@@ -51,6 +51,6 @@ fi
 (cp -f juno.target ${BUILDDIR}/core/org.osate.build.target/juno.target )
 
 
-(cd ${BUILDDIR}/build_and_test/osate-ramses-maven-build/ && mvn clean install)
+(cd ${BUILDDIR}/build_and_test/ramses-maven-build/ && mvn clean install)
 
 cp -f ${BUILDDIR}/build_and_test/distribution/target/*.zip ${TARGETDIR}/
