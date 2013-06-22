@@ -22,5 +22,6 @@ mkdir -p ${BUILDDIR}
 (cd ${BUILDDIR}/core/org.osate.help/ && cp -rf html/start ${BUILDDIR}/osate-doc/osate-introduction)
 (cd ${BUILDDIR}/core/ && find . -name '*.xmi' -exec cp "{}" ${BUILDDIR}/osate-doc/metamodel/ \; )
 (cd ${BUILDDIR}/core/ && find . -name '*.ecore' -exec cp "{}" ${BUILDDIR}/osate-doc/metamodel/ \; )
+( rm -f ${BUILDDIR}/osate-doc/metamodel/Sandbox.xmi )
 
 exit 0
