@@ -3,11 +3,11 @@
 BUILDDIR=/tmp/osate
 TARGETDIR=/tmp/osate-ramses
 
-VERSION=2.0.2-snapshot
+VERSION=2.0.4-snapshot
 DATE=`date '+%Y%m%d'`
 
-JUNO_PLATFORM_URL="http://mirrors.med.harvard.edu/eclipse/eclipse/downloads/drops4/R-4.2.2-201302041200/org.eclipse.platform-4.2.2.zip"
-JUNO_PLATFORM_FILE="org.eclipse.platform-4.2.2.zip"
+ECLIPSE_PLATFORM_URL="http://ftp.ussg.iu.edu/eclipse/eclipse/downloads/drops4/R-4.3-201306052000/org.eclipse.platform-4.3.zip"
+ECLIPSE_PLATFORM_FILE="org.eclipse.platform-4.3.zip"
 
 
 rm -rf ${BUILDDIR}
@@ -15,15 +15,15 @@ mkdir -p ${BUILDDIR}
 mkdir -p ${TARGETDIR}
 
 
-if [ ! -f $JUNO_PLATFORM_FILE ]; then
-	wget -c $JUNO_PLATFORM_URL
+if [ ! -f $ECLIPSE_PLATFORM_FILE ]; then
+	wget -c $ECLIPSE_PLATFORM_URL
 fi
 (cd ${BUILDDIR} && rm -rf core)
 (cd ${BUILDDIR} && rm -rf plugins)
 (cd ${BUILDDIR} && rm -rf error-model1)
 (cd ${BUILDDIR} && rm -rf error-model2)
-(cp -f $JUNO_PLATFORM_FILE /tmp)
-(cd /tmp && unzip -f $JUNO_PLATFORM_FILE )
+(cp -f $ECLIPSE_PLATFORM_FILE /tmp)
+(cd /tmp && unzip -f $ECLIPSE_PLATFORM_FILE )
 
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlutils/trunk aadlutils )
 
@@ -49,6 +49,7 @@ fi
 
 (cp -f indigo.target ${BUILDDIR}/core/org.osate.build.target/indigo.target )
 (cp -f juno.target ${BUILDDIR}/core/org.osate.build.target/juno.target )
+(cp -f kepler.target ${BUILDDIR}/core/org.osate.build.target/kepler.target )
 
 
 (cd ${BUILDDIR}/build_and_test/ramses-maven-build/ && mvn clean install)
