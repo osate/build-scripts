@@ -25,6 +25,8 @@ fi
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git aadlba)
+
 (cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/plugin.properties" )
 (cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/about.mappings" )
 

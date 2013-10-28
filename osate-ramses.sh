@@ -25,10 +25,6 @@ fi
 (cp -f $ECLIPSE_PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $ECLIPSE_PLATFORM_FILE )
 
-(cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlutils/trunk aadlutils )
-
-(cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlba/trunk aadlba )
-
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlmt/trunk aadlmt )
 
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/update-site update-site)
@@ -39,6 +35,9 @@ fi
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
+
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git adlba)
+
 
 
 #(cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/plugin.properties" )
