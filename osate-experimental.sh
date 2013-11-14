@@ -25,6 +25,15 @@ fi
 (cp -f $KEPLER_PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $KEPLER_PLATFORM_FILE )
 
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
+
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git aadlba)
+
+
+
 #Prepare agree and resolute
 (cd ${BUILDDIR} && git clone -b master https://github.com/smaccm/smaccm.git smaccm)
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/agree .)
@@ -38,14 +47,8 @@ for v in com.rockwellcollins.atc.resolute com.rockwellcollins.atc.resolute.analy
 done
 
 cp -f misc/plugins.experimental.feature.xml ${BUILDDIR}/plugins/org.osate.plugins.feature/feature.xml
+cp -f misc/core-experimental-build-pom.xml ${BUILDDIR}/core/org.osate.build.main/pom.xml
 #end of agree/resolute specific hack
-
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
-
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git aadlba)
 
 (cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/plugin.properties" )
 (cd ${BUILDDIR} && sed -i "s/RELEASE_VERSION/$VERSION/g" "core/org.osate.branding/about.mappings" )
