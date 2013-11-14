@@ -36,6 +36,8 @@ done
 for v in com.rockwellcollins.atc.resolute com.rockwellcollins.atc.resolute.analysis com.rockwellcollins.atc.resolute.schedule.analysis com.rockwellcollins.atc.resolute.ui; do
 	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/resolute/$v/pom.xml
 done
+
+cp -f misc/plugins.experimental.feature.xml ${BUILDDIR}/plugins/org.osate.plugins.feature/feature.xml
 #end of agree/resolute specific hack
 
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
