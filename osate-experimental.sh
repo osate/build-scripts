@@ -24,9 +24,19 @@ fi
 (cd ${BUILDDIR} && rm -rf error-model2)
 (cp -f $KEPLER_PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $KEPLER_PLATFORM_FILE )
+
+#Prepare agree and resolute
 (cd ${BUILDDIR} && git clone -b master https://github.com/smaccm/smaccm.git smaccm)
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/agree .)
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/resolute .)
+for v in com.rockwellcollins.atc.agree com.rockwellcollins.atc.agree.analysis com.rockwellcollins.atc.agree.ui; do
+	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/agree/$v/pom.xml
+done
+
+for v in com.rockwellcollins.atc.resolute com.rockwellcollins.atc.resolute.analysis com.rockwellcollins.atc.resolute.schedule.analysis com.rockwellcollins.atc.resolute.ui; do
+	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/resolute/$v/pom.xml
+done
+#end of agree/resolute specific hack
 
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
