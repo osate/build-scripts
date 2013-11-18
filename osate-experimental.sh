@@ -40,13 +40,18 @@ fi
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/resolute .)
 for v in com.rockwellcollins.atc.agree com.rockwellcollins.atc.agree.analysis com.rockwellcollins.atc.agree.ui; do
 	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/agree/$v/pom.xml
+	sed -e 's/1.0.0/1.0.0.qualifier/g' ${BUILDDIR}/agree/$v/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
+	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/agree/$v/META-INF/MANIFEST.MF
 done
 
 for v in com.rockwellcollins.atc.resolute com.rockwellcollins.atc.resolute.analysis com.rockwellcollins.atc.resolute.schedule.analysis com.rockwellcollins.atc.resolute.ui; do
 	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/resolute/$v/pom.xml
+	sed -e 's/1.0.0/1.0.0.qualifier/g' ${BUILDDIR}/resolute/$v/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
+	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/resolute/$v/META-INF/MANIFEST.MF
 done
 
 cp -f misc/plugins.experimental.feature.xml ${BUILDDIR}/plugins/org.osate.plugins.feature/feature.xml
+cp -f misc/plugins.experimental.feature.source.xml ${BUILDDIR}/plugins/org.osate.plugins.source.feature/feature.xml
 cp -f misc/core-experimental-build-pom.xml ${BUILDDIR}/core/org.osate.build.main/pom.xml
 #end of agree/resolute specific hack
 
