@@ -7,6 +7,7 @@ DATE=`date '+%Y%m%d'`
 
 KEPLER_PLATFORM_URL="http://ftp.ussg.iu.edu/eclipse/eclipse/downloads/drops4/R-4.3-201306052000/org.eclipse.platform-4.3.zip"
 KEPLER_PLATFORM_FILE="org.eclipse.platform-4.3.zip"
+RDALTE_SRC=/home/julien/tmp/rdalte.zip
 
 mkdir -p ${BUILDDIR}
 
@@ -34,20 +35,44 @@ fi
 
 
 
+#Prepare RDALTE
+cp ${RDALTE_SRC} ${BUILDDIR}/rdalte.zip
+(cd ${BUILDDIR} && unzip rdalte.zip)
+
+for v in `find  ${BUILDDIR}/rdalte/  -mindepth 1 -maxdepth 1 -type d`; do
+name=`echo $v|awk -F'/' '{print $5}'`  
+echo  $name
+if [ -d ${BUILDDIR}/rdalte/$name ]; then
+	sed -e "s/ARTIFACT_NAME/$name/g" misc/pom.xml.template > ${BUILDDIR}/rdalte/$name/pom.xml
+fi
+
+if [ -d ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF ]; then
+	sed -e 's/1.0.0.201310032002/1.0.0.qualifier/g' ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
+	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF
+fi
+done
+#end of RDALTE-specific work
+
+
+
 #Prepare agree and resolute
 (cd ${BUILDDIR} && git clone -b master https://github.com/smaccm/smaccm.git smaccm)
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/agree .)
 (cd ${BUILDDIR} && cp -rf smaccm/fm-workbench/resolute .)
+
+
 for v in com.rockwellcollins.atc.agree com.rockwellcollins.atc.agree.analysis com.rockwellcollins.atc.agree.ui; do
 	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/agree/$v/pom.xml
 	sed -e 's/1.0.0/1.0.0.qualifier/g' ${BUILDDIR}/agree/$v/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
-	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/agree/$v/META-INF/MANIFEST.MF
+	sed -e 's/;bundle-version=\"1.0.0.qualifier\"//g' /tmp/MANIFEST.tmp > /tmp/MANIFEST.tmp2
+	cp -f /tmp/MANIFEST.tmp2 ${BUILDDIR}/agree/$v/META-INF/MANIFEST.MF
 done
 
 for v in com.rockwellcollins.atc.resolute com.rockwellcollins.atc.resolute.analysis com.rockwellcollins.atc.resolute.schedule.analysis com.rockwellcollins.atc.resolute.ui; do
 	sed -e "s/ARTIFACT_NAME/$v/g" misc/pom.xml.template > ${BUILDDIR}/resolute/$v/pom.xml
 	sed -e 's/1.0.0/1.0.0.qualifier/g' ${BUILDDIR}/resolute/$v/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
-	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/resolute/$v/META-INF/MANIFEST.MF
+	sed -e 's/;bundle-version=\"1.0.0.qualifier\"//g' /tmp/MANIFEST.tmp > /tmp/MANIFEST.tmp2
+	cp -f /tmp/MANIFEST.tmp2 ${BUILDDIR}/resolute/$v/META-INF/MANIFEST.MF
 done
 
 cp -f misc/plugins.experimental.feature.xml ${BUILDDIR}/plugins/org.osate.plugins.feature/feature.xml
