@@ -93,6 +93,47 @@
     <module>../../agree/com.rockwellcollins.atc.agree</module>
     <module>../../agree/com.rockwellcollins.atc.agree.ui</module>
     <module>../../agree/com.rockwellcollins.atc.agree.analysis</module>
+
+
+    <module>../../rdalte/fr.openpeople.rdalte.osate</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.model.editor</module>
+    <module>../../rdalte/fr.labsticc.framework.settings.ide</module>
+    <module>../../rdalte/fr.openpeople.rdal.service</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.ocl.service</module>
+    <module>../../rdalte/fr.openpeople.rdalte.compatibility</module>
+    <module>../../rdalte/fr.openpeople.rdal.model.diagram</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.ide</module>
+    <module>../../rdalte/fr.labsticc.framework.settings.modelinterface.osate</module>
+    <module>../../rdalte/fr.labsticc.framework.settings.model</module>
+    <module>../../rdalte/fr.labsticc.framework.emf</module>
+    <module>../../rdalte/fr.labsticc.framework.ide</module>
+    <module>../../rdalte/fr.labsticc.framework.settings.model.editor</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.service</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.examples</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.lute.view</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.lute.service</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.model.edit</module>
+    <module>../../rdalte/fr.openpeople.rdal.model</module>
+    <module>../../rdalte/fr.openpeople.rdal.ide</module>
+    <module>../../rdalte/fr.openpeople.rdalte.osate.examples</module>
+    <module>../../rdalte/fr.labsticc.framework.compatibility</module>
+    <module>../../rdalte/fr.labsticc.framework.emf.view</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.view</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.model.service</module>
+    <module>../../rdalte/fr.openpeople.rdal.model.editor</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.ocl.view</module>
+    <module>../../rdalte/fr.labsticc.framework.settings.model.edit</module>
+    <module>../../rdalte/org.slf4j.log4j12</module>
+    <module>../../rdalte/fr.openpeople.ide.settings</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.core</module>
+    <module>../../rdalte/fr.labsticc.framework.service</module>
+    <module>../../rdalte/fr.labsticc.framework.core</module>
+    <module>../../rdalte/com.rockwellcollins.atc.meta.lute</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.model</module>
+    <module>../../rdalte/fr.openpeople.rdal.help</module>
+    <module>../../rdalte/fr.openpeople.rdal.model.edit</module>
+    <module>../../rdalte/fr.openpeople.models.aadl.default</module>
+    <module>../../rdalte/fr.labsticc.framework.constraints.bless.service</module>
     
   </modules>
 

@@ -46,7 +46,7 @@ if [ -d ${BUILDDIR}/rdalte/$name ]; then
 	sed -e "s/ARTIFACT_NAME/$name/g" misc/pom.xml.template > ${BUILDDIR}/rdalte/$name/pom.xml
 fi
 
-if [ -d ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF ]; then
+if [ -f ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF ]; then
 	sed -e 's/1.0.0.201310032002/1.0.0.qualifier/g' ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
 	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF
 fi
