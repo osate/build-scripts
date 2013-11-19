@@ -110,9 +110,6 @@
 
     <module>../../aadlmt/analysis/fr.tpt.aadl.ramses.analysis.result</module>
     <module>../../aadlmt/analysis/fr.tpt.aadl.ramses.util.properties</module>
-    <module>../../aadlmt/analysis/fr.tpt.aadl.sched.propertiesextractor</module>
-    <module>../../aadlmt/analysis/fr.tpt.aadl.sched.tools.aadlinspector</module>
-    <module>../../aadlmt/analysis/fr.tpt.aadl.sched.tools.cheddar</module>
     <module>../../aadlmt/analysis/fr.tpt.aadl.sched.wcetanalysis</module>
 
     <module>../../aadlmt/launchers/fr.tpt.aadl.ramses.control.cli.core</module>

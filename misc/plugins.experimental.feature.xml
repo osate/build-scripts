@@ -518,13 +518,6 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
-   <plugin
-         id="fr.tpt.aadl.ramses.control.cli.static"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 
    <plugin
          id="fr.tpt.aadl.ramses.control.osate"
@@ -536,14 +529,6 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
 
    <plugin
          id="fr.tpt.aadl.ramses.control.support"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-
-   <plugin
-         id="fr.tpt.aadl.ramses.control.xml.gui"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -583,27 +568,12 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
 
 
    <plugin
-         id="fr.tpt.aadl.sched.propertiesextractor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-
-   <plugin
          id="fr.tpt.aadl.sched.tools.aadlinspector"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
-
-   <plugin
-         id="fr.tpt.aadl.sched.tools.cheddar"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
 
    <plugin
