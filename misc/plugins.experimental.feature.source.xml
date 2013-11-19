@@ -450,13 +450,6 @@
          unpack="false"/>
 
 
-   <plugin
-         id="fr.openpeople.models.aadl.default.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 
    <plugin
          id="fr.labsticc.framework.constraints.bless.service.source"
