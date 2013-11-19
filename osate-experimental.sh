@@ -47,7 +47,7 @@ if [ -d ${BUILDDIR}/rdalte/$name ]; then
 fi
 
 if [ -f ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF ]; then
-	sed -e 's/1.0.0.201310032002/1.0.0.qualifier/g' ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
+	 sed -e 's/Bundle-Version:.*/Bundle-Version: 1.0.0.qualifier/g' ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
 	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/rdalte/$name/META-INF/MANIFEST.MF
 fi
 done
