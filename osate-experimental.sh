@@ -33,6 +33,11 @@ fi
 
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git aadlba)
 
+#Prepare RAMSES
+(cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlmt/trunk aadlmt )
+
+(cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/update-site update-site)
+#end of prepare RAMSES
 
 
 #Prepare RDALTE
