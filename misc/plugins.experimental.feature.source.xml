@@ -154,7 +154,7 @@
          version="0.0.0"
          unpack="false"/>
 
-
+<!--
    <plugin
          id="fr.openpeople.rdalte.osate.source"
          download-size="0"
@@ -458,7 +458,7 @@
          version="0.0.0"
          unpack="false"/>
 
-
+-->
 
 
 </feature>

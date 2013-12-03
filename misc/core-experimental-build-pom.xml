@@ -120,6 +120,7 @@
     <module>../../aadlmt/launchers/fr.tpt.aadl.ramses.transformation.atl.launch</module>
 -->
 
+<!--
     <module>../../rdalte/fr.openpeople.rdalte.osate</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.model.editor</module>
     <module>../../rdalte/fr.labsticc.framework.settings.ide</module>
@@ -159,6 +160,8 @@
     <module>../../rdalte/fr.openpeople.rdal.model.edit</module>
     <module>../../rdalte/fr.openpeople.models.aadl.default</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.bless.service</module>
+
+-->
     
   </modules>
 
