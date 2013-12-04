@@ -154,7 +154,6 @@
          version="0.0.0"
          unpack="false"/>
 
-<!--
    <plugin
          id="fr.openpeople.rdalte.osate.source"
          download-size="0"
@@ -378,6 +377,7 @@
          unpack="false"/>
 
 
+<!--
    <plugin
          id="org.slf4j.log4j12.source"
          download-size="0"
@@ -385,6 +385,7 @@
          version="0.0.0"
          unpack="false"/>
 
+-->
 
    <plugin
          id="fr.openpeople.ide.settings.source"
@@ -458,7 +459,6 @@
          version="0.0.0"
          unpack="false"/>
 
--->
 
 
 </feature>

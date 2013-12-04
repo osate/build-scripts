@@ -120,7 +120,6 @@
     <module>../../aadlmt/launchers/fr.tpt.aadl.ramses.transformation.atl.launch</module>
 -->
 
-<!--
     <module>../../rdalte/fr.openpeople.rdalte.osate</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.model.editor</module>
     <module>../../rdalte/fr.labsticc.framework.settings.ide</module>
@@ -149,7 +148,6 @@
     <module>../../rdalte/fr.openpeople.rdal.model.editor</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.ocl.view</module>
     <module>../../rdalte/fr.labsticc.framework.settings.model.edit</module>
-    <module>../../rdalte/org.slf4j.log4j12</module>
     <module>../../rdalte/fr.openpeople.ide.settings</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.core</module>
     <module>../../rdalte/fr.labsticc.framework.service</module>
@@ -161,6 +159,8 @@
     <module>../../rdalte/fr.openpeople.models.aadl.default</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.bless.service</module>
 
+<!--
+    <module>../../rdalte/org.slf4j.log4j12</module>
 -->
     
   </modules>

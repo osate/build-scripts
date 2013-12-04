@@ -228,7 +228,6 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
-<!--
    <plugin
          id="fr.openpeople.rdalte.osate"
          download-size="0"
@@ -425,12 +424,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          version="0.0.0"
          unpack="false"/>
 
+<!--
    <plugin
          id="org.slf4j.log4j12"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
    <plugin
          id="fr.openpeople.ide.settings"
@@ -502,7 +503,6 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          version="0.0.0"
          unpack="false"/>
 
--->
 <!--
 
    <plugin
