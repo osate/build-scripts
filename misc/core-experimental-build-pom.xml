@@ -152,7 +152,6 @@
     <module>../../rdalte/fr.labsticc.framework.constraints.core</module>
     <module>../../rdalte/fr.labsticc.framework.service</module>
     <module>../../rdalte/fr.labsticc.framework.core</module>
-    <module>../../rdalte/com.rockwellcollins.atc.meta.lute</module>
     <module>../../rdalte/fr.labsticc.framework.constraints.model</module>
     <module>../../rdalte/fr.openpeople.rdal.help</module>
     <module>../../rdalte/fr.openpeople.rdal.model.edit</module>

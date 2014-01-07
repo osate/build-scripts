@@ -41,8 +41,11 @@ fi
 
 
 #Prepare RDALTE
-cp ${RDALTE_SRC} ${BUILDDIR}/rdalte.zip
-(cd ${BUILDDIR} && unzip rdalte.zip)
+(cd ${BUILDDIR} && mkdir -p rdalte)
+(cd ${BUILDDIR} && git clone -b master https://github.com/dblouin/rdalte.git rdalte1)
+(cd ${BUILDDIR} && git clone -b master https://github.com/dblouin/lab-sticc-fw.git rdalte2)
+(cd ${BUILDDIR} && cp -rf rdalte1/* rdalte/)
+(cd ${BUILDDIR} && cp -rf rdalte2/* rdalte/)
 
 for v in `find  ${BUILDDIR}/rdalte/  -mindepth 1 -maxdepth 1 -type d`; do
 name=`echo $v|awk -F'/' '{print $5}'`  
