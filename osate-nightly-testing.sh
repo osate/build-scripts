@@ -2,7 +2,7 @@
 
 BUILDDIR=/tmp/osate
 
-VERSION=2.0.4-snapshot
+VERSION=2.0.6-snapshot
 DATE=`date '+%Y%m%d'`
 
 KEPLER_PLATFORM_URL="http://ftp.ussg.iu.edu/eclipse/eclipse/downloads/drops4/R-4.3-201306052000/org.eclipse.platform-4.3.zip"
