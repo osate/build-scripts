@@ -9,6 +9,7 @@ else
 	exit 3
 fi
 
-(cd /tmp/osate-qa && unzip ramses.zip )
-(cd /tmp/osate-qa/aadl-qa && export PATH=/tmp/osate-qa/ramses/:$PATH && ./aadl-qa.pl run Osate )
+(cd /tmp/osate-qa && unzip -q ramses.zip )
+ramsesdir=`find /tmp/osate-qa -type d -name 'ramses*'`
+(cd /tmp/osate-qa/aadl-qa && export PATH=$ramsesdir:$PATH && ./aadl-qa.pl run Osate )
 
