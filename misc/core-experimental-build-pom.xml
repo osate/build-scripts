@@ -168,33 +168,38 @@
 
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.edit</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.instance</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.instance.edit</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.instance.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.edit</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.editor</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.instance</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.instance.edit</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.packages</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.packages.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.properties</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.properties.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.libs</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.real</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.real.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.real.text.editor</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.ui</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.workspace</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.workspace.feature</module>
 	<module>../../masiw/ru.ispras.masiw.scheduling.interfaces</module>
 	<module>../../masiw/ru.ispras.masiw.util</module>
+
+
+<!--
+
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.workspace.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.real.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.packages.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.instance.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.model.view.feature</module>
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.properties.feature</module>
+-->
 
   </modules>
 

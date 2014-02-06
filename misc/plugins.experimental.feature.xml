@@ -686,12 +686,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.diagram.editor.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+  -->
 
 
    <plugin
@@ -702,12 +704,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
 
    <plugin
@@ -726,12 +730,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.instance.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
 
    <plugin
@@ -758,13 +764,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.model.view.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+-->
 
    <plugin
          id="ru.ispras.masiw.plugin.aadl.model.view.instance"
@@ -790,13 +797,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.packages.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+-->
 
    <plugin
          id="ru.ispras.masiw.plugin.aadl.properties"
@@ -806,13 +814,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.properties.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+-->
 
    <plugin
          id="ru.ispras.masiw.plugin.aadl.text.editor"
@@ -822,12 +831,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.aadl.text.editor.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
 
    <plugin
@@ -846,12 +857,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.real.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
 
    <plugin
@@ -878,12 +891,14 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
          unpack="false"/>
 
 
+   <!--
    <plugin
          id="ru.ispras.masiw.plugin.workspace.feature"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+-->
 
 
    <plugin
