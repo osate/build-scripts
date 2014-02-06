@@ -39,6 +39,47 @@ fi
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/update-site update-site)
 #end of prepare RAMSES
 
+#prepare MASIW
+(cd ${BUILDDIR} && svn co --non-interactive --trust-server-cert --force  http://forge.ispras.ru/svn/masiw-oss/trunk masiw)
+
+for name in ru.ispras.masiw.plugin.aadl \
+	 ru.ispras.masiw.plugin.aadl.diagram.editor \
+	 ru.ispras.masiw.plugin.aadl.diagram.editor.feature \
+	 ru.ispras.masiw.plugin.aadl.edit \
+	 ru.ispras.masiw.plugin.aadl.feature \
+	 ru.ispras.masiw.plugin.aadl.instance \
+	 ru.ispras.masiw.plugin.aadl.instance.edit \
+	 ru.ispras.masiw.plugin.aadl.instance.feature \
+	 ru.ispras.masiw.plugin.aadl.model.view \
+	 ru.ispras.masiw.plugin.aadl.model.view.edit \
+	 ru.ispras.masiw.plugin.aadl.model.view.editor \
+	 ru.ispras.masiw.plugin.aadl.model.view.feature \
+	 ru.ispras.masiw.plugin.aadl.model.view.instance \
+	 ru.ispras.masiw.plugin.aadl.model.view.instance.edit \
+	 ru.ispras.masiw.plugin.aadl.packages \
+	 ru.ispras.masiw.plugin.aadl.packages.feature \
+	 ru.ispras.masiw.plugin.aadl.properties \
+	 ru.ispras.masiw.plugin.aadl.properties.feature \
+	 ru.ispras.masiw.plugin.aadl.text.editor \
+	 ru.ispras.masiw.plugin.aadl.text.editor.feature \
+	 ru.ispras.masiw.plugin.libs \
+	 ru.ispras.masiw.plugin.real \
+	 ru.ispras.masiw.plugin.real.feature \
+	 ru.ispras.masiw.plugin.real.text.editor \
+	 ru.ispras.masiw.plugin.ui \
+	 ru.ispras.masiw.plugin.workspace \
+	 ru.ispras.masiw.plugin.workspace.feature \
+	 ru.ispras.masiw.scheduling.interfaces \
+	 ru.ispras.masiw.util; do
+if [ -d ${BUILDDIR}/masiw/$name ]; then
+	sed -e "s/ARTIFACT_NAME/$name/g" misc/pom.xml.template > ${BUILDDIR}/masiw/$name/pom.xml
+fi
+if [ -f ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF ]; then
+	 sed -e 's/Bundle-Version:.*/Bundle-Version: 1.0.0.qualifier/g' ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
+	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF
+fi
+done
+
 
 #Prepare RDALTE
 (cd ${BUILDDIR} && mkdir -p rdalte)

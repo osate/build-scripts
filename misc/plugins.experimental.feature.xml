@@ -670,4 +670,237 @@ to the terms of the license set forth at http://www.aadl.info/OSATELicense.html.
 -->
 
 
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.diagram.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.diagram.editor.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.instance"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.instance.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.instance.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view.instance"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.model.view.instance.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.packages"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.packages.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.properties"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.properties.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.text.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.aadl.text.editor.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.libs"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.real"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.real.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.real.text.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.workspace"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.plugin.workspace.feature"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.scheduling.interfaces"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="ru.ispras.masiw.util"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+
 </feature>
