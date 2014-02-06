@@ -184,12 +184,12 @@
 	<module>../../masiw/ru.ispras.masiw.plugin.real.text.editor</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.ui</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.workspace</module>
-	<module>../../masiw/ru.ispras.masiw.scheduling.interfaces</module>
 	<module>../../masiw/ru.ispras.masiw.util</module>
 
 
 <!--
 
+	<module>../../masiw/ru.ispras.masiw.scheduling.interfaces</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.workspace.feature</module>
