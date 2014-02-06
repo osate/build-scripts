@@ -179,7 +179,6 @@
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.packages</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.properties</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor</module>
-	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.libs</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.real</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.real.text.editor</module>
@@ -191,6 +190,7 @@
 
 <!--
 
+	<module>../../masiw/ru.ispras.masiw.plugin.aadl.text.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.workspace.feature</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.real.feature</module>
