@@ -76,7 +76,8 @@ if [ -d ${BUILDDIR}/masiw/$name ]; then
 fi
 if [ -f ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF ]; then
 	 sed -e 's/Bundle-Version:.*/Bundle-Version: 1.0.0.qualifier/g' ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF > /tmp/MANIFEST.tmp
-	cp -f /tmp/MANIFEST.tmp ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF
+	sed -e 's/;bundle-version=\".*\"//g'  /tmp/MANIFEST.tmp > /tmp/MANIFEST.tmp2
+	cp -f /tmp/MANIFEST.tmp2 ${BUILDDIR}/masiw/$name/META-INF/MANIFEST.MF
 fi
 done
 
