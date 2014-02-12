@@ -12,7 +12,7 @@ mkdir -p /tmp/osate-qa/reports/findbugs
 (cd /tmp/osate-qa && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd /tmp/osate-qa && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
-DO_AADLQA=0
+DO_AADLQA=1
 
 if [ ${DO_AADLQA} -eq 1 ]; then
 
