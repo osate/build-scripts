@@ -3,7 +3,7 @@
 rm -rf /tmp/osate-qa
 mkdir -p /tmp/osate-qa
 
-export OUTPUT_PATH=/tmp/osate-qa/reports/date '+%Y%m%d'
+export OUTPUT_PATH=/tmp/osate-qa/reports/`date '+%Y%m%d'`
 
 mkdir -p ${OUTPUT_PATH}
 mkdir -p ${OUTPUT_PATH}/pmd
