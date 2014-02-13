@@ -7,6 +7,7 @@ export OUTPUT_PATH=/tmp/osate-qa/reports/date '+%Y%m%d'
 
 mkdir -p ${OUTPUT_PATH}
 mkdir -p ${OUTPUT_PATH}/pmd
+mkdir -p ${OUTPUT_PATH}/cpd
 mkdir -p ${OUTPUT_PATH}/findbugs
 mkdir -p ${OUTPUT_PATH}/aadl-qa/journals
 mkdir -p ${OUTPUT_PATH}/aadl-qa/reports
@@ -40,6 +41,7 @@ if [ -d "${PMD_PATH}" ]; then
   for v in core plugins error-model2; do
   export PMD_PATH
     (cd ${PMD_PATH}  ; HEAPSIZE=1024m ./bin/run.sh pmd -d /tmp/osate-qa/$v/ -f html -R java-unusedcode -version 1.7 -language java > ${OUTPUT_PATH}/pmd/osate-$v.html)
+    (cd ${PMD_PATH}  ; HEAPSIZE=1024m ./bin/run.sh cpd --files /tmp/osate-qa/$v/ --minimum-tokens 100  --language java  --format text > ${OUTPUT_PATH}/cpd/osate-$v.html)
   done
 fi
 
@@ -48,5 +50,6 @@ if [ -f "${FINDBUGS_BIN}" ]; then
   for v in core plugins error-model2; do
   export FINDBUGS_BIN
     ( ${FINDBUGS_BIN} -textui -output ${OUTPUT_PATH}/findbugs/osate-$v.html -html -onlyAnalyze org.osate.- /tmp/osate-qa/$v/ )
+    
   done
 fi
