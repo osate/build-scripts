@@ -53,3 +53,5 @@ if [ -f "${FINDBUGS_BIN}" ]; then
     
   done
 fi
+
+exit 0
