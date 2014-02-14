@@ -41,7 +41,7 @@ if [ -d "${PMD_PATH}" ]; then
   for v in core plugins error-model2; do
   export PMD_PATH
     (cd ${PMD_PATH}  ; HEAPSIZE=1024m ./bin/run.sh pmd -d /tmp/osate-qa/$v/ -f html -R java-unusedcode -version 1.7 -language java > ${OUTPUT_PATH}/pmd/osate-$v.html)
-    (cd ${PMD_PATH}  ; HEAPSIZE=1024m ./bin/run.sh cpd --files /tmp/osate-qa/$v/ --minimum-tokens 100  --language java  --format text > ${OUTPUT_PATH}/cpd/osate-$v.html)
+    (cd ${PMD_PATH}  ; HEAPSIZE=1024m ./bin/run.sh cpd --files /tmp/osate-qa/$v/ --minimum-tokens 100  --language java  --format text > ${OUTPUT_PATH}/cpd/osate-$v.txt)
   done
 fi
 
