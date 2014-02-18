@@ -45,6 +45,11 @@
 </location>
 
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<repository location="http://raw.github.com/nasa/CertWare/master/net.certware.feature.updatesite"/>
+</location>
+
+
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.m2m.atl.emftvm.feature.group" version="0.0.0"/>
 <repository location="http://download.eclipse.org/mmt/atl/updates/releases/3.4"/>
 </location>
