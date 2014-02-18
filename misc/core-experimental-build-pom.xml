@@ -90,12 +90,14 @@
     <module>../../resolute/com.rockwellcollins.atc.resolute.analysis</module>
     <module>../../resolute/com.rockwellcollins.atc.resolute.schedule.analysis</module>
 
+
+
+<!--
+
     <module>../../agree/com.rockwellcollins.atc.agree</module>
     <module>../../agree/com.rockwellcollins.atc.agree.ui</module>
     <module>../../agree/com.rockwellcollins.atc.agree.analysis</module>
 
-
-<!--
     <module>../../aadlmt/model2model/fr.tpt.aadl.ramses.communication.periodic.delayed</module>
     <module>../../aadlmt/model2model/fr.tpt.aadl.ramses.util.math</module>
     <module>../../aadlmt/model2model/fr.tpt.aadl.ramses.transformation.atl</module>
