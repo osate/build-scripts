@@ -19,7 +19,6 @@
       <url>http://repository.sonatype.org/content/groups/sonatype-public-grid/</url>
     </pluginRepository>
   </pluginRepositories>
-<!-- -->
 
   <modules>
     <module>../org.osate.aadl2</module>
@@ -167,7 +166,7 @@
 -->
 
 
-
+<!--
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.diagram.editor</module>
 	<module>../../masiw/ru.ispras.masiw.plugin.aadl.edit</module>
@@ -188,7 +187,7 @@
 	<module>../../masiw/ru.ispras.masiw.plugin.workspace</module>
 
 
-<!--
+
 
 	<module>../../masiw/ru.ispras.masiw.util</module>
 	<module>../../masiw/ru.ispras.masiw.scheduling.interfaces</module>

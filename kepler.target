@@ -19,6 +19,10 @@
 <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.e4.rcp.feature.group" version="0.0.0"/>
 
+<unit id="org.eclipse.graphiti.feature.feature.group" version="0.0.0"/>
+<unit id="oorg.eclipse.graphiti.feature.tools.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.graphiti.sdk.feature.feature.group" version="0.0.0"/>
+
 <unit id="org.eclipse.egf.sdk.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.egf.core.ui.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
