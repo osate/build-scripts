@@ -39,6 +39,10 @@ fi
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/update-site update-site)
 #end of prepare RAMSES
 
+
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate-ge.git osate-ge) 
+
+
 #prepare MASIW
 #(cd ${BUILDDIR} && svn co --non-interactive --trust-server-cert --force  http://forge.ispras.ru/svn/masiw-oss/trunk masiw)
 

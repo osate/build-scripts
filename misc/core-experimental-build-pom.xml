@@ -160,7 +160,8 @@
     <module>../../rdalte/fr.labsticc.framework.constraints.bless.service</module>
 
 
-
+    <module>../../osate-ge/org.osate.ge</module>
+    <module>../../osate-ge/org.osate.ge.doc</module>
 <!--
     <module>../../rdalte/org.slf4j.log4j12</module>
 -->
