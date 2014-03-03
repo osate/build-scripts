@@ -84,15 +84,16 @@
     <module>../../aadlba/org.osate.ba.feature</module>
     <module>../../aadlba/org.osate.ba.edit</module>
 
+
+
+<!--
+
     <module>../../resolute/com.rockwellcollins.atc.resolute</module>
     <module>../../resolute/com.rockwellcollins.atc.resolute.ui</module>
     <module>../../resolute/com.rockwellcollins.atc.resolute.analysis</module>
     <module>../../resolute/com.rockwellcollins.atc.resolute.schedule.analysis</module>
 
-
-
-<!--
-
+    
     <module>../../agree/com.rockwellcollins.atc.agree</module>
     <module>../../agree/com.rockwellcollins.atc.agree.ui</module>
     <module>../../agree/com.rockwellcollins.atc.agree.analysis</module>
