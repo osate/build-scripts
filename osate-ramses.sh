@@ -36,7 +36,7 @@ fi
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git adlba)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-ba.git aadlba)
 
 
 
