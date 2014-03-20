@@ -48,6 +48,7 @@
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 
+<!--
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="net.certware.feature.cae.feature.group" version="0.0.0"/>
 <unit id="net.certware.feature.arm.feature.group" version="0.0.0"/>
@@ -55,6 +56,7 @@
 <unit id="net.certware.feature.aml.feature.group" version="0.0.0"/>
 <repository location="http://raw.github.com/nasa/CertWare/master/net.certware.feature.updatesite"/>
 </location>
+-->
 
 
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
