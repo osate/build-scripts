@@ -16,7 +16,7 @@ mkdir -p ${TARGETDIR}
 
 
 if [ ! -f $ECLIPSE_PLATFORM_FILE ]; then
-	wget -c $ECLIPSE_PLATFORM_URL
+wget -c $ECLIPSE_PLATFORM_URL
 fi
 (cd ${BUILDDIR} && rm -rf core)
 (cd ${BUILDDIR} && rm -rf plugins)
@@ -28,8 +28,6 @@ fi
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/aadlmt/trunk aadlmt )
 
 (cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/update-site update-site)
-
-(cd ${BUILDDIR} && svn --username ramses_readers --password ramses co https://eve.enst.fr/svn/aadl-eclipse-dev/build_and_test build_and_test)
 
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
@@ -51,6 +49,6 @@ fi
 (cp -f kepler.target ${BUILDDIR}/core/org.osate.build.target/kepler.target )
 
 
-(cd ${BUILDDIR}/build_and_test/ramses-maven-build/ && mvn clean install)
+(cd ${BUILDDIR}/aadlmt/build_and_test/fr.tpt.aadl.ramses.build.main/ && mvn clean install)
 
-cp -f ${BUILDDIR}/build_and_test/distribution/target/*.zip ${TARGETDIR}/
+cp -f ${BUILDDIR}/aadlmt/build_and_test/fr.tpt.aadl.ramses.build.distribution/target/*.zip ${TARGETDIR}/
