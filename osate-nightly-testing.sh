@@ -22,9 +22,9 @@ fi
 
 (cp -f $PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $PLATFORM_FILE )
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core.git core)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins.git plugins)
-(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate-ge.git osate-ge)
+(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate2-core/ core)
+(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate2-plugins/ plugins)
+(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate-ge/ osate-ge)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
@@ -37,5 +37,5 @@ fi
 (cd ${BUILDDIR} && sed -i "s/RELEASE_DATE/$DATE/g" "core/org.osate.branding/about.mappings" )
 
 (cp -f luna.target ${BUILDDIR}/core/org.osate.build.target/luna.target )
-(cd ${BUILDDIR}/core/org.osate.build.main && mvn clean install) || exit 1
+(cd ${BUILDDIR}/core/org.osate.build.main && mvn -Dmaven.test.failure.ignore=true clean install) || exit 1
 exit 0
