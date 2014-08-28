@@ -22,9 +22,9 @@ fi
 
 (cp -f $PLATFORM_FILE /tmp)
 (cd /tmp && unzip -f $PLATFORM_FILE )
-(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate2-core/ core)
-(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate2-plugins/ plugins)
-(cd ${BUILDDIR} && git clone -b develop file://$HOME/git/osate/osate-ge/ osate-ge)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-core/ core)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate2-plugins/ plugins)
+(cd ${BUILDDIR} && git clone -b develop https://github.com/osate/osate-ge/ osate-ge)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV1.git error-model1)
 (cd ${BUILDDIR} && git clone -b develop https://github.com/osate/ErrorModelV2.git error-model2)
 
